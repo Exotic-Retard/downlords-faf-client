@@ -36,8 +36,8 @@ apply plugin: 'com.github.kt3k.coveralls'
 apply plugin: 'distribution'
 
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_1_9
+targetCompatibility = JavaVersion.VERSION_1_9
 
 version = '0.9.0-beta-rc.3'
 
@@ -308,6 +308,7 @@ dependencies {
   compile("com.github.jasminb:jsonapi-converter:${jsonapiConverterVersion}")
   compile("com.github.Brutus5000:BiReUS-JCL:${bireusVersion}")
 //  compile("com.jfoenix:jfoenix:${jfoenixVersion}")
+  compile("javax.annotation:javax.annotation-api:1.3.1")
 
   compile project(":webview-patch")
 
